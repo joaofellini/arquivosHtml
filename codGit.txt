@@ -1,0 +1,27 @@
+git init // inicializar
+
+git status
+
+git add "nome do arquivo"
+
+git add . colocar todos os arquivos
+
+git commit -m "criando versões com mensagem"
+
+git remote add origin "link" //mandar o cod para a nuvem
+
+git push
+
+git reflog // ver atualizações
+
+git reset --hard "Id da atualização" // volta uma versão do cod
+
+branch // local para armazenar os cod
+
+git branch "nome" // cria uma nova branch
+
+git checkout "nome" // te direciona para aquela branch
+
+git merge "nome" // une branch
+	(git push) // atualizar
+
