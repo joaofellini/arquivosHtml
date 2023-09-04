@@ -1,0 +1,92 @@
+var multiplicador = 1 ;
+while(multiplicador <= 10 ){
+    mostra(numero * multiplicador) ;
+    
+    multiplicador = multiplicador + 1 ;
+}
+
+ou
+
+for(espaço 1; espaço 2; espaço 3){
+}
+
+
+
+for (var multiplicador = 1 ; multiplicador <= 10; multiplicador = multiplicador + 1){
+    mostra(numero * multiplicador) ;
+}
+
+manipulação array
+
+numeros = []
+
+numero.push(9); // adiciona numeros a lista
+
+
+//////////
+
+var idadedeMinima = 18 
+var idadeCliente = 16
+
+if (idadeCliente >= idadedeMinima ){
+    console.log("cerveja")
+}else{
+    console.log("suco")
+}
+
+ou 
+
+                            //condição      //true      //false
+console.log( idadeCliente >= idadedeMinima ? "cerveja" : "suco")
+
+//////////
+
+var nome = "jj"
+var idade = 28
+var cidade = "sinop"
+
+var apresentacao = `meu nome é ${nome}, tenho ${idade}, nasci em ${cidade}`
+
+
+function apresentar(nome){
+    return `meu nome é ${nome}`;
+}
+
+////ou
+//Arrow
+const apresentar = nome => `meu nome é ${nome}`;
+
+//contagem
+const palavra="alura";
+console.log(palavra.length) //5
+
+//acessar elementos
+console.log("alura".charAt(3)) //r
+
+//posição de um caractere
+const palavra="Divertidamente"
+console.log(palavra.indexOf("e")) //3
+
+//precisamos deixar o texto todo em letras minúsculas (lower case) ou todo em maiúsculas (upper case)
+const palavra="alura";
+console.log(palavra.toUpperCase()) //ALURA
+console.log(palavra.toLowerCase()) //alura
+
+//açamos a extração de parte de uma string
+let frase= "Mergulhando em tecnologia."
+console.log(frase.substr(0,11)) // Mergulhando
+
+//substituir parte de uma string por outra
+let nome = "André";
+let comunicacao = " Olá, sr. nomeusurario, informamos que a partir da presente data o senhor tem 50% de desconto em nossa loja.";
+console.log(comunicacao.replace("nomeusurario",nome));
+
+//seguimos quebrar uma string com base em caracteres separadores que vamos informar para o método como parâmetro.
+let linguagens = "JavaScript;Java;C#;PHP;Python;Go;Vb;SQL;C;C++";
+let arrayLinguagens = linguagens.split(";");
+console.log(arrayLinguagens)
+
+//remove os espaços em branco no início ou fim
+let login = "   andre@emailteste.com      ";
+let loginSemEspaco = login.trim();
+console.log(loginSemEspaco); //andre@emailteste.com

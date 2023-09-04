@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1> jogo numero aleatorio </h1>
+    <script>
+            function pulalinha() {
+        document.write("<br>") ;
+    }
+            function mostra(texto) {
+        document.write(texto) ;
+        pulalinha();
+    }
+    
+    var numero = Math.round(Math.random() * 10) ;
+    var tentativas = 1;
+
+    while( tentativas <= 3) {
+      var chute = parseInt(prompt("Escolha um numero de 1 a 10: ")) ;
+
+      if (chute == numero){
+        mostra("Parabens você acertou!") ;
+        break;
+    } else {
+        mostra("Você errou o numero") ;
+    }
+    tentativas++
+  }
+    
+    </script>
+  </body>
+</html>

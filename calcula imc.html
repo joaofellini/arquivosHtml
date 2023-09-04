@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>IMC</title>
+</head>
+ <h1> calculadora de imc </h1>
+<body>
+<script>
+   function mostra(texto) {
+    document.write(texto);
+}
+
+function exibeAlerta(mensagem) {
+    alert("***" + mensagem + "***");
+}
+
+function pulalinha() {
+    document.write("<br>");
+}
+
+function calculaImc(peso, altura) {
+    return peso / (altura * altura);
+}
+
+
+exibeAlerta("Calculadora de IMC!");
+
+var nome = prompt("Informe o seu nome:");
+
+var pesoUsuario = prompt("Informe seu peso:");
+
+var alturaUsuario = prompt("Informe sua altura:");
+
+var imc = calculaImc(pesoUsuario, alturaUsuario);
+
+if (imc > 35) {
+    mostra(nome + " está acima do peso.");
+} else if (imc < 18.5) {
+    mostra(nome + " está abaixo do peso.");
+} else if (imc >= 18.05 && imc <= 35){
+    mostra("Seu peso está dentro da faixa considerada saudável.");
+}
+
+pulalinha();
+
+mostra(nome + ", seu IMC é de " + imc);
+
+pulalinha();
+
+mostra("<3");
+
+</script>
+</body>
+</html>
